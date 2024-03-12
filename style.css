@@ -38,13 +38,37 @@ body{
 }
   
 header{
+  display: flex;
+  flex-direction: column;
   grid-area: header;
   background-color:var(--blue-color);
+  padding: var(--spacing);
 
 }
-main{
-  grid-area: main;
 
+header h1{
+text-align: center;
+text-transform: uppercase;
+color: var(--primary-color);
+font-size:1.2em;
+}
+
+header .parragraph{
+ display: flex;
+ flex-grow: 1;
+  color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--blue-color);
+padding: var(--spacing);
+  grid-area: main;
   border: var(--border);
 
 }
@@ -74,11 +98,23 @@ main{
   }
 
   footer{
+    display: flex;
+    flex-direction: column;
     grid-area: footer;
-    background-color:orange;
+    background-color:var(--orange-color);
+    padding: var(--spacing);
+    gap:24px;
+    color: var(--primary-color);
   
   }
   
+  footer button{
+    height:50px;
+    width:100px;
+    text-transform: uppercase;
+    font-size: 10px;
+    border: none;
+  }
   .alumni,
   .school,
   .student,
