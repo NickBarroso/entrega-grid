@@ -10,19 +10,28 @@
   
   /* Resto del CSS */
 
-  *{
-    margin:0;
-    padding:0;
-  box-sizing: border-box;
-  }
 
 
 .grid-container{
+<<<<<<< HEAD
   /* padding:var(--spacing); */
   min-width: 100vw;
   min-height:100vh;
+=======
+>>>>>>> parent of 059d645 (a)
   display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  min-width:100%;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+    margin: 0;
+    gap: var(--spacing);
 
+<<<<<<< HEAD
   grid-template-areas: 
     "header school student"
     "header main time"
@@ -30,32 +39,32 @@
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing);
+=======
+grid-template-areas: 
+"header school student"
+"header main time"
+"alumni footer footer";
+>>>>>>> parent of 059d645 (a)
 }
   
 header{
   grid-area: header;
   background-color:var(--blue-color);
-
+  height:100%;
 }
 main{
   grid-area: main;
-
+  height:100%;
   border: var(--border);
-
-  color: var(--blue-color);
-  text-transform: uppercase;
-padding:0px 20px 0px 20px;
-
-}
-
-main > h2{
-margin: 100px auto;
-text-align: center;
+  width: 100%;
 }
   .school {
     width:100%;
     background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d8ce469044b958508f4bdbab/blueschoolbackpackwithessentialsupplies_232148207678.jpg);
     grid-area: school;
+  height:100%;
+
+  
   }
   
   .student {
@@ -76,39 +85,21 @@ text-align: center;
 
   footer{
     grid-area: footer;
-    background-color:var(--orange-color);
+    background-color:orange;
     height:100%;
-    padding:20px;
-    color: var(--primary-color)
-  }
-
-  footer > h3{
-    margin-bottom:40px;
   }
   
-  footer button{
-    margin-top:40px;
-    width:150px;
-    height:50px;
-    text-transform: uppercase;  
-    color: var(--secondary-color);
-    font-weight: 700;
-    font-size:10px;
-  }
-
-
   .alumni,
   .school,
   .student,
   .time {
-    /* width:100%;
-    height:100%; */
-  background-size: cover;
-    background-position: center;
-
+    width:100%;
+    height:100%;
+    background-size: cover;
 
   }
 
+<<<<<<< HEAD
   @media all and (max-width:800px){
   
      .grid-container{
@@ -122,4 +113,25 @@ text-align: center;
         "footer";
        grid-template-rows:2fr repeat(5, 1fr); 
     } 
+=======
+  @media screen and (max-width:700px){
+    .grid-container{
+      width:100%;
+      height:100%;
+      grid-template-areas:
+      "header"
+      "school"
+      "student"
+      "main"
+      "time"
+      "footer";
+      grid-template-columns:200px;
+      grid-template-rows: 600px
+      2fr
+      2fr
+      2fr
+      2fr
+      1fr;
+    }
+>>>>>>> parent of 059d645 (a)
   }
