@@ -8,7 +8,7 @@
  
 <div>
 <p style = 'text-align:center;'>
-<img src="./assets/grid.png" alt="Resultados del CSS grid en horizontal" width="500px">
+<img src="https://res.cloudinary.com/dxrczhicp/image/upload/v1710360602/grid_zppeb7.png" alt="Resultados del CSS grid en horizontal" width="500px">
 </p>
 </div>
 <div>
